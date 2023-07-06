@@ -1,0 +1,8 @@
+<?php
+if ($_FILES["file"]["error"] > 0) {  // 如果文件上传过程中发生错误
+    echo "Error: " . $_FILES["file"]["error"] . "<br>";  // 打印错误信息
+} else {  // 如果文件上传成功
+    move_uploaded_file($_FILES["file"]["tmp_name"], "upload/" . $_FILES["file"]["name"]);  // 将文件移动到你的服务器上的"upload"文件夹中
+    echo "Stored in: " . "upload/" . $_FILES["file"]["name"];  // 打印文件的存储位置
+}
+?>
