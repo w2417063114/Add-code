@@ -1,0 +1,16 @@
+success: function(data) {  // 当请求成功时的回调函数
+    console.log('上传成功!');
+    // 你可以在这里添加对响应数据的处理，比如更新UI，提示用户等
+}
+
+
+success: function(data) {  // 当请求成功时的回调函数
+    console.log('上传成功!');
+    alert('你的图片已成功上传！');  // 弹出一个包含固定消息的对话框
+}
+
+
+success: function(data) {  // 当请求成功时的回调函数
+    console.log('上传成功!');
+    $('#message').text('你的图片已成功上传！');  // 将一个固定的消息设置为指定元素的文本
+}
