@@ -1,0 +1,8 @@
+<!-- 现有的HTML元素，例如你的输入框、按钮等 -->
+<!-- 你的HTML元素 -->
+
+<!-- 新添加的文件上传输入框 -->
+<form id="upload-form" enctype="multipart/form-data">
+    <input type="file" id="upload-file" name="upload-file" accept="image/*">
+    <input type="button" id="submit-button" value="上传">
+</form>
